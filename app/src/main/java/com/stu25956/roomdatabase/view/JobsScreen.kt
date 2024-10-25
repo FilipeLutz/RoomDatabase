@@ -210,7 +210,7 @@ fun JobsItem(
 // Safe date parsing function
 fun parseDate(dateString: String): String {
     if (dateString.isEmpty()) {
-        return "N/A" // or any default message you want to show
+        return "N/A"
     }
 
     return try {
@@ -219,7 +219,7 @@ fun parseDate(dateString: String): String {
         date.toLocalDate()
     } catch (e: ParseException) {
         Log.e("DateParsing", "Failed to parse date: ${e.message}")
-        "Invalid Date" // Return a default message or handle the error
+        "Invalid Date"
     }
 }
 // Extension function to convert Date to LocalDate

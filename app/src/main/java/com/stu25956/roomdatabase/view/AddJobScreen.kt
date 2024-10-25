@@ -130,7 +130,7 @@ fun AddJobScreen(
             TextField(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(8.dp), // Reduced padding for better visibility
+                    .padding(8.dp),
                 value = state.customerName.value,
                 onValueChange = { state.customerName.value = it },
                 textStyle = TextStyle(fontWeight = FontWeight.SemiBold, fontSize = 17.sp),
@@ -205,7 +205,7 @@ fun AddJobScreen(
                     text = "Select Date To: ${state.dateTo.value}",
                     fontSize = 20.sp,
                     fontWeight = FontWeight.SemiBold,
-                    modifier = Modifier.weight(1f) // Let text take available space
+                    modifier = Modifier.weight(1f)
                 )
 
                 IconButton(
